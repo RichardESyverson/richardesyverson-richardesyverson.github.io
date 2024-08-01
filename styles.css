@@ -1,1 +1,13 @@
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px); /* Move image 100px to the right */
+    }
+}
+
+.animated-image {
+    animation: moveRight 2s infinite alternate; /* 2 seconds duration, infinite loop, alternate direction */
+}
 
