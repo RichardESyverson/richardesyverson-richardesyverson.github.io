@@ -1,0 +1,13 @@
+.image-container {
+    width: 300px; /* Adjust the width as needed */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.hover-image {
+    width: 100%; /* Ensure the image fits the container */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
