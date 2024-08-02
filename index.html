@@ -8,12 +8,18 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/styles.css"> <!-- Link to your CSS file -->
     <link rel="icon" href="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/images/favicon.ico" type="image/x-icon">
-    <!--Changes entire documents Background color-->
-    <!--changes entire documents text color-->
+   
+   
+   
+   
+   
+    <!--start of CSS Style-->>
     <style>
           body {
             color: white; /* Sets the text color for the entire document */
             background-color: #242323; /* Example dark background */
+            font-family: 'Garamond', serif;
+            font-size: medium;
         }
     
         .center-text {
@@ -90,22 +96,30 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 300px; /* Set the height of the banner */
+            height: 400px; /* Set the height of the banner */
             overflow: hidden;
             position: relative;
-            background-color: rgb(70, 127, 212);
+            background-color: rgba(96, 162, 216, 0.7);
             border: 5px black;
             
         }
 
         .banner img {
             width: 40%;
-            height: 200px;
+            height: auto;
             object-fit: cover; /* Cover the entire banner area */
             
         }
 
 
+        .text-banner {
+    background-color: rgba(96, 162, 216, 0.7); /* Semi-transparent background color */
+    padding: 20px; /* Adds space inside the container */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow around the container */
+    display: inline-block; /* Makes the container wrap only the content */
+    color: white; /* Sets text color */
+}
 
 
 
@@ -122,7 +136,7 @@
 
 /* Navigation Menu Styles */
 nav {
-    background-color: #333; /* Dark background for the nav */
+    background-color: #222222; /* Dark background for the nav */
     padding: 10px 20px; /* Space around the nav */
 }
 
@@ -135,7 +149,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px; /* Space between items */
+    margin: 0 40px; /* Space between items */
 }
 
 nav a {
@@ -147,17 +161,25 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(96, 162, 216); /* Change color on hover */
+    color: rgba(96, 162, 216, 0.7); /* Change color on hover */
 }
-
-
-
-
-
 
     </style>
 
+    <!--end of CCS Style-->
+
 </head>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <body>
@@ -204,7 +226,7 @@ nav a:hover {
 
 
     <section id="about">
-        <div class="center-text container">
+        <div class="center-text container text-banner">
         <h2>About Me</h2>
         <p>I am a soon to be veteran Explosive Ordnance Disposal team member seeking gainful emplyoment in the Information Technology space. I am open to work in the following areas ; Texas, Florida, Illinois, Colorado, and Washington.</p>  
 
