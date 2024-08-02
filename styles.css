@@ -183,7 +183,9 @@ nav a {
 }
 
 nav a:hover {
-    color: rgba(236, 167, 18, 0.7); /* Change color on hover */
+    color: rgba(236, 167, 18, 0.7); /* Changes text color on hover */
+    border-bottom: 2px solid rgba(236, 167, 18, 0.7); /* Adds a bottom border */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
 }
 
 
