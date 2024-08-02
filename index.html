@@ -31,7 +31,7 @@
 
         .styled-image {
             width: 45%;
-            max-width: 500px;
+            max-width: 1000px;
             height: auto;
             border: 5px solid black;
             border-radius: 10px;
@@ -73,11 +73,14 @@
     gap: 0px; /* Space between images */
     flex-wrap: wrap; /* Allow wrapping to the next line if needed */
     width: 100%;
-    max-width: 1000px;
+    max-width: 2000px;
     margin: auto;
 }
 
-
+.responsive-image {
+    width: 100%; /* Image will take up 100% of the container's width */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 
@@ -145,7 +148,7 @@ nav a:hover {
     <!-- Main Content -->
      <!-- Picture content-->
      <section>
-        <div class="image-container">
+        <div class="image-container responsive-image">
         <img src="https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2203/7097952/2000w_q95.jpg" 
         alt="Syverson's kit and EOD badge show case"
        class="styled-image" 
@@ -201,14 +204,14 @@ nav a:hover {
 <div class="center-image">
         <img src="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/images/resume 1.png" 
         alt="Resume preview"
-        class="styled-imageresume"
+        class="styled-imageresume responsive-image"
         >
     </div>
      
 <div class="center-image">
         <img src="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/images/resume 2.png" 
         alt="Resume preview"
-        class="styled-imageresume" 
+        class="styled-imageresume responsive-image" 
         >
     </div>
     </section>
