@@ -2,67 +2,54 @@
 <html lang="en">
 
 
-<head>
+<head> <!--where you add charater sets, Web title, and Links to CSS, Favicon
+        and really anything you want loaded first. (top of the page stuff)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/styles.css"> <!-- Link to your CSS file -->
     <link rel="icon" href="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/images/favicon.ico" type="image/x-icon">
    
-<style>
-
-
-
-.rotate-clockwise:hover {
-    transform: scale(1.05) rotate(20deg); /* Slightly zooms in the image */
-    box-shadow: 0px 0px 15px 7px gray; /* Increases shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
+<style>/*where you add CSS not added into your styles.css. Way to get instant 
+        test of CSS script without having to wait for the repository to update*/
+        .rotate-clockwise:hover {
+                 transform: scale(1.05) rotate(20deg); /* Slightly zooms in the image */
+                 box-shadow: 0px 0px 15px 7px gray; /* Increases shadow */
+                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
    
-    .rotate-counterclockwise:hover {
-        transform: scale(1.05) rotate(-20deg); /* Slightly zooms in the image */
-        box-shadow: 0px 0px 15px 7px gray; /* Increases shadow */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+         .rotate-counterclockwise:hover {
+                transform: scale(1.05) rotate(-20deg); /* Slightly zooms in the image */
+                 box-shadow: 0px 0px 15px 7px gray; /* Increases shadow */
+                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 
-}
-
-
-
-
+        }
 
 </style>
-
-
-
-
-
-
-
 </head>
 
-<body>
+<body> <!--Goes all the way to the bottom of the page and holds everything-->
 
     <!-- Navigation Menu -->
-     <div class="center-text">
-    <nav>
-        <ul>
+    <div class="center-text">
+ <nav>
+ <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#Resume">Resume preview/download</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+</ul>
+ </nav>
 </div>
 
 
-    <!-- Main Content -->
-     <!-- Picture content-->
-     <section>
+    
+     <section> <!--My name at the top, and the two pictures showcased at the begining.-->
         
         <h1 style="font-size: 3em; text-align: center; font-weight: bolder; color: rgba(118, 186, 241, 0.7); text-decoration: underline overline; ">Richard Eugene Syverson</h1>
     
-        <div class="responsive-image banner ">
+    <div class="responsive-image banner ">
         <img src="https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2203/7097952/2000w_q95.jpg" 
         alt="Syverson's kit and EOD badge show case"
        class="styled-image rotate-clockwise" 
@@ -115,7 +102,7 @@
         <div class=center-text >
         <h2>Resume preview/download</h2>
         <a href="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/PDFs/3. Richard_Syverson_Resume updated with mssa - Copy.pdf" download>Download My Resume</a>
-         
+        <!--This is where the two images of my resume is showcased.--> 
 <div class="center-image styled-imageresume:hover ">
         <img src="https://richardesyverson.github.io/richardesyverson-richardesyverson.github.io/images/resume 1.png" 
         alt="Resume preview"
@@ -128,7 +115,7 @@
     </div>
     </section>
 
-
+    <!--This is the contact section at the bottom of the page.-->
 <div class="center-text">
     <section id="contact">
         <h2>Contact</h2>
@@ -138,7 +125,7 @@
     
  
 
-    <!-- Footer -->
+    <!-- Footer(contains copyright) -->
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
@@ -146,7 +133,7 @@
 
 
 
-    <!-- JavaScript File Link -->
+    <!-- JavaScript File Link (at bottom because generally you want it loaded last) -->
     <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
 
 
