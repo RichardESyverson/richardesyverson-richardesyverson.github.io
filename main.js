@@ -20,7 +20,7 @@ document.getElementById('get-weather').addEventListener('click', function() {
                     <p>Temperature: ${data.current.temp_f}°F</p>
                     <p>Weather: ${data.current.condition.text}</p>
                     <p>UV: ${data.current.uv}</p>
-                    <img src="${data.current.condition.icon}" alt="Weather icon" style="width: 50px; height: 50px;">
+                    <img src="${data.current.condition.icon}" alt="Weather icon" style="width: 100px; height: 100px;">
                 `;
                 document.getElementById('weather-info').innerHTML = weatherInfo;
             } else {
@@ -32,7 +32,7 @@ document.getElementById('get-weather').addEventListener('click', function() {
             document.getElementById('weather-info').innerHTML = `<p>Error fetching weather data</p>`;
         });
 });
-document.getElementById('city-input').addEventListener('keypress', function(event) {
+document.getElementById('get-weather').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         getWeather();
     }
