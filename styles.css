@@ -247,6 +247,9 @@ nav a:hover {
 .weather-info {
     margin-top: 20px;
     font-size: 18px;
+    border: 5px#000000;
+    border-radius: 5px;
+    background-color: #3f3f3f;
 }
 
 /* Style the powered by section */
