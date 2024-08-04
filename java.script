@@ -6,26 +6,27 @@ document.getElementById('get-weather').addEventListener('click', function() {
     const apiKey = 'e2e0fcb1a33343ca8dd203731240408'; // Replace with your actual API key
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
-`;
-
     fetch(url)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
-            if (data.cod === 200) {
+            if (data) {
                 const weatherInfo = `
-    <p><strong>${data.location.name}, ${data.location.country}</strong></p>
-    <p>Temperature: ${data.current.temp_c}°C</p>
-    <p>Weather: ${data.current.condition.text}</p>
-`;
-
+                    <p><strong>${data.location.name}, ${data.location.country}</strong></p>
+                    <p>Temperature: ${data.current.temp_c}°C</p>
+                    <p>Weather: ${data.current.condition.text}</p>
                 `;
                 document.getElementById('weather-info').innerHTML = weatherInfo;
             } else {
-                document.getElementById('weather-info').innerHTML = `<p>${data.message}</p>`;
+                document.getElementById('weather-info').innerHTML = `<p>Unable to retrieve weather data</p>`;
             }
         })
         .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
             document.getElementById('weather-info').innerHTML = `<p>Error fetching weather data</p>`;
         });
 });
-
