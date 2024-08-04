@@ -19,7 +19,7 @@ document.getElementById('get-weather').addEventListener('click', function() {
                     <p><strong>${data.location.name}, ${data.location.country}</strong></p>
                     <p>Temperature: ${data.current.temp_f}°C</p>
                     <p>Weather: ${data.current.condition.text}</p>
-                    <p>UV: ${data.current.UV}</p>
+                    <p>UV: ${data.current.uv}</p>
                 `;
                 document.getElementById('weather-info').innerHTML = weatherInfo;
             } else {
