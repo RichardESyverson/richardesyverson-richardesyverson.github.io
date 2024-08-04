@@ -20,6 +20,7 @@ document.getElementById('get-weather').addEventListener('click', function() {
                     <p>Temperature: ${data.current.temp_f}°F</p>
                     <p>Weather: ${data.current.condition.text}</p>
                     <p>UV: ${data.current.uv}</p>
+                    <p>${data.current.icon}</p>
                 `;
                 document.getElementById('weather-info').innerHTML = weatherInfo;
             } else {
