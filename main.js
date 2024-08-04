@@ -17,7 +17,7 @@ document.getElementById('get-weather').addEventListener('click', function() {
             if (data) {
                 const weatherInfo = `
                     <p><strong>${data.location.name}, ${data.location.country}</strong></p>
-                    <p>Temperature: ${data.current.temp_c}°C</p>
+                    <p>Temperature: ${data.current.temp_f}°C</p>
                     <p>Weather: ${data.current.condition.text}</p>
                 `;
                 document.getElementById('weather-info').innerHTML = weatherInfo;
