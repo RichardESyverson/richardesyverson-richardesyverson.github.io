@@ -4,7 +4,8 @@
 document.getElementById('get-weather').addEventListener('click', function() {
     const city = document.getElementById('city-input').value;
     const apiKey = 'e2e0fcb1a33343ca8dd203731240408'; // Replace with your actual API key
-    const url = `http://api.weatherapi.com/v1/current.json?key={e2e0fcb1a33343ca8dd203731240408}&q={city name}&aqi=no
+    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
 `;
 
     fetch(url)
@@ -12,9 +13,11 @@ document.getElementById('get-weather').addEventListener('click', function() {
         .then(data => {
             if (data.cod === 200) {
                 const weatherInfo = `
-                    <p><strong>${data.name}, ${data.sys.country}</strong></p>
-                    <p>Temperature: ${data.main.temp}°C</p>
-                    <p>Weather: ${data.weather[0].description}</p>
+    <p><strong>${data.location.name}, ${data.location.country}</strong></p>
+    <p>Temperature: ${data.current.temp_c}°C</p>
+    <p>Weather: ${data.current.condition.text}</p>
+`;
+
                 `;
                 document.getElementById('weather-info').innerHTML = weatherInfo;
             } else {
