@@ -4,7 +4,7 @@
 document.getElementById('get-weather').addEventListener('click', function() {
     const city = document.getElementById('city-input').value;
     const apiKey = '43e2048cc4984a55838214434240408'; // Replace with your actual API key
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
     fetch(url)
         .then(response => {
