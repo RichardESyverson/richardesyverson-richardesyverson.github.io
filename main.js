@@ -32,7 +32,7 @@ document.getElementById('get-weather').addEventListener('click', function() {
             document.getElementById('weather-info').innerHTML = `<p>Error fetching weather data</p>`;
         });
 });
-document.getElementById('get-weather').addEventListener('keypress', function(event) {
+document.getElementById('city-input').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         getWeather();
     }
