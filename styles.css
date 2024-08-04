@@ -202,3 +202,15 @@ nav a:hover {
 }
 
     
+
+/*CSS for the weather app*/
+#weather-app {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #367faf;
+    border-radius: 5px;
+}
+#weather-info {
+    margin-top: 10px;
+}
