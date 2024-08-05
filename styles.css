@@ -251,8 +251,25 @@ section {
 
 
 
+/*for the pulse animation on the navbar*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
 
-
+.sidebar a.active {
+    animation: pulse 1.5s infinite;
+}
 
 
 
