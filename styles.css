@@ -179,24 +179,7 @@ section {
         margin-left: 0; /* Remove content offset on mobile */
     }
 
-    .menu-toggle {
-        display: block; /* Show menu button on mobile */
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        background: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-}
-
-/* Hide menu button on desktop */
-.menu-toggle {
-    display: none;
-}
+    
 
 
 
