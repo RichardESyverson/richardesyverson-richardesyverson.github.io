@@ -166,8 +166,11 @@ section {
 
 }
 
+#weather-app { 
+    min-height: 25vh;
 
 
+}
 
 
 
