@@ -77,3 +77,11 @@ document.addEventListener('scroll', function() {
         }
     });
 });
+
+
+//load in freshlinks//
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.sidebar a');
+    navLinks.forEach(link => link.classList.remove('active'));
+});
