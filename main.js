@@ -40,3 +40,17 @@ document.getElementById('city-input').addEventListener('keypress', function(even
         getWeather();
     }
 });
+
+//for the scroll effect
+window.addEventListener('scroll', function() {
+    const sidebar = document.querySelector('.sidebar');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+        sidebar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        sidebar.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.3)';
+    } else {
+        sidebar.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        sidebar.style.boxShadow = 'none';
+    }
+});

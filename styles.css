@@ -114,6 +114,70 @@
 
 
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    transition: background 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
+}
+
+.content {
+    margin-left: 270px; /* Offset for fixed sidebar */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px; /* Space between sections */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,6 +227,8 @@ nav ul {
     padding: 0;
     display: flex; /* Align items horizontally */
     justify-content: center; /* Center the items horizontally */
+    
+
 }
 
 nav li {
@@ -261,3 +327,10 @@ nav a:hover {
 #weather-app a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
