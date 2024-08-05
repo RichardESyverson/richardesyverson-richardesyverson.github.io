@@ -56,6 +56,24 @@ window.addEventListener('scroll', function() {
 });
 
 
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.sidebar').classList.toggle('open');
+
+
+document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.sidebar a');
+    let currentIndex = -1;
+
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            currentIndex = index;
+        }
+    });
+
+    navLinks.forEach((link, index) => {
+        link.classList.remove('active');
+        if (index === currentIndex) {
+            link.classList.add('active');
+        }
+    });
 });
