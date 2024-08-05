@@ -360,7 +360,7 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-    min-height: 50vh;
+    
 }
 
 /* Add hover effect for the button */
