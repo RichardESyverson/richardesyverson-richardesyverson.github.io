@@ -67,7 +67,8 @@ function updateActiveLink() {
 
     sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
+        // Adjust the logic to better detect when a section is "active"
+        if (rect.top <= 100 && rect.bottom > 100) {
             currentIndex = index;
         }
     });
