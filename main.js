@@ -59,6 +59,7 @@ window.addEventListener('scroll', function() {
 //pulse animation
 
 // Function to update the active link based on scroll position
+// Function to update the active link based on scroll position
 function updateActiveLink() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.sidebar a');
