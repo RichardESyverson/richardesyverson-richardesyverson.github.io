@@ -129,7 +129,7 @@
 }
 
 .sidebar a {
-    color: #fff;
+    color: #66baeb;
     text-decoration: none;
     display: block;
     padding: 15px;
@@ -139,7 +139,11 @@
 
 .sidebar a:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: #f0f0f0;
+    color: #f7a901;
+}
+.sidebar a:visited {
+    color: #66baeb; /* or match this to the default link color */
+    text-decoration: none;
 }
 
 .content {
