@@ -151,7 +151,9 @@ section {
     margin-bottom: 100px; /* Space between sections */
 }
 
-
+.mobile-nav {
+    display: none; /* Hide by default */
+}
 
 
 
