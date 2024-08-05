@@ -76,8 +76,15 @@ document.addEventListener('scroll', function() {
             link.classList.add('active');
         }
     });
-});
+}, 100);
 
+function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
 
 //load in freshlinks//
 
