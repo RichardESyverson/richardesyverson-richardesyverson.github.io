@@ -1,7 +1,7 @@
 
 // Weather app embeded in the website
 
-document.getElementById('get-weather').addEventListener('click', function() {
+function getWeather() {
     const city = document.getElementById('city-input').value;
     const apiKey = '43e2048cc4984a55838214434240408'; // Replace with your actual API key
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
@@ -31,7 +31,10 @@ document.getElementById('get-weather').addEventListener('click', function() {
             console.error('There was a problem with the fetch operation:', error);
             document.getElementById('weather-info').innerHTML = `<p>Error fetching weather data</p>`;
         });
-});
+}
+
+document.getElementById('get-weather').addEventListener('click', getWeather);
+
 document.getElementById('city-input').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         getWeather();
