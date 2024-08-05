@@ -195,7 +195,9 @@ section {
         border: none;
     }
 }
-
+.menu-toggle {
+    display: none;
+}
 
 
 
