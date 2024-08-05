@@ -156,6 +156,11 @@ section {
     display: none; /* Hide by default */
 }
 
+#contact { 
+    min-height: 100vh;
+
+
+}
 
 
 
