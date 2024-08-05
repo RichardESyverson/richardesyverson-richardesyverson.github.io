@@ -58,7 +58,8 @@ window.addEventListener('scroll', function() {
 
 //pulse animation
 
-document.addEventListener('scroll', function() {
+// Function to update the active link based on scroll position
+function updateActiveLink() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.sidebar a');
     let currentIndex = -1;
@@ -76,8 +77,9 @@ document.addEventListener('scroll', function() {
             link.classList.add('active');
         }
     });
-}, 100);
+}
 
+// Debounce function to limit how often the scroll event handler is executed
 function debounce(func, wait) {
     let timeout;
     return function(...args) {
@@ -86,9 +88,14 @@ function debounce(func, wait) {
     };
 }
 
-//load in freshlinks//
+// Update the active link on scroll with debouncing
+document.addEventListener('scroll', debounce(updateActiveLink, 100));
 
-document.addEventListener('DOMContentLoaded', function() {
+// Update the active link on page load
+document.addEventListener('DOMContentLoaded', updateActiveLink);
+
+// Reset active links on page reload
+window.addEventListener('load', function() {
     const navLinks = document.querySelectorAll('.sidebar a');
     navLinks.forEach(link => link.classList.remove('active'));
 });
