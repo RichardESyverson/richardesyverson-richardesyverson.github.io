@@ -61,7 +61,7 @@ window.addEventListener('scroll', function() {
 // Function to update the active link based on scroll position
 // Function to update the active link based on scroll position
 function updateActiveLink() {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section:not(.ignore-highlight)'); // Skip sections with the class 'ignore-highlight'
     const navLinks = document.querySelectorAll('.sidebar a');
     let currentIndex = -1;
 
