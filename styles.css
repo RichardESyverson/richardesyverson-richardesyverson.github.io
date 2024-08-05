@@ -149,7 +149,7 @@
 
 section {
     margin-bottom: 100px; /* Space between sections */
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .mobile-nav {
