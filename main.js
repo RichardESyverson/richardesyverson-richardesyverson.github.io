@@ -67,7 +67,7 @@ function updateActiveLink() {
 
     sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 4 && rect.bottom >= window.innerHeight / 4) {
+        if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
             currentIndex = index;
         }
     });
