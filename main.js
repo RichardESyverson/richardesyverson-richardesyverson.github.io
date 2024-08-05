@@ -54,3 +54,8 @@ window.addEventListener('scroll', function() {
         sidebar.style.boxShadow = 'none';
     }
 });
+
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('open');
+});
